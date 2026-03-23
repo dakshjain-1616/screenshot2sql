@@ -114,6 +114,22 @@ erDiagram
 
 ---
 
+## Supported Vision Models
+
+Set any model via `SCREENSHOT_MODEL` env var. All accessed through a single [OpenRouter](https://openrouter.ai) API key.
+
+| Model | Input $/M | Context | Notes |
+|---|---|---|---|
+| `google/gemini-2.5-flash-lite` | $0.10 | 1M | **Default** — best balance of cost, speed, and quality |
+| `google/gemini-2.5-flash` | $0.30 | 1M | Higher accuracy for complex UIs |
+| `xiaomi/mimo-v2-omni` | $0.40 | 262K | Highest visual reasoning score (MMMU-Pro 76.8) — Xiaomi's latest omni model |
+| `meta-llama/llama-4-scout` | $0.08 | Large | Open-weight, cheapest with vision |
+| `qwen/qwen2.5-vl-72b-instruct` | free tier | 32K | Specialized for UI/OCR/charts |
+
+> **MiMo-V2 note:** `xiaomi/mimo-v2-pro` is **text-only** and cannot process images. For vision tasks, use `xiaomi/mimo-v2-omni` instead.
+
+---
+
 ## Features
 
 | Feature | Description |
