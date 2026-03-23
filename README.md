@@ -6,6 +6,8 @@
 
 # Screenshot2SQL
 
+> Built autonomously using [NEO](https://heyneo.so) — your autonomous AI Agent
+
 **Reverse-engineer any SaaS UI screenshot into a production-ready SQL schema.**
 
 Drop a Shopify, Notion, GitHub, or Stripe screenshot and get fully normalized `CREATE TABLE` statements, SQLAlchemy ORM models, Mermaid ER diagrams, Prisma schemas, and TypeScript interfaces — instantly. Powered by [Google Gemini 2.5 Flash Lite](https://openrouter.ai/google/gemini-2.5-flash-lite) via OpenRouter.
