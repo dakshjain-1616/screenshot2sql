@@ -1,0 +1,5 @@
+openai>=1.57.0
+streamlit>=1.40.0
+Pillow>=10.0.0
+python-dotenv>=1.0.0
+rich>=13.0.0
