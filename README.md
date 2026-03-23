@@ -175,11 +175,14 @@ Copy `.env.example` → `.env` and fill in your values:
 **Recommended vision models (via OpenRouter):**
 
 ```
-google/gemini-2.5-flash-lite    # default — cheapest, 1M context, fast
-google/gemini-2.5-flash         # higher accuracy, still cheap
-meta-llama/llama-4-scout        # open-weight, $0.08/M input
-qwen/qwen2.5-vl-72b-instruct   # specialized for UI/OCR/charts
+google/gemini-2.5-flash-lite    # default — $0.10/M, 1M context, fast
+google/gemini-2.5-flash         # $0.30/M — higher accuracy
+xiaomi/mimo-v2-omni             # $0.40/M, 262K ctx — best visual reasoning (MMMU-Pro 76.8)
+meta-llama/llama-4-scout        # $0.08/M — open-weight, good value
+qwen/qwen2.5-vl-72b-instruct   # free tier available — strong on UI/OCR/charts
 ```
+
+> **Note on MiMo-V2:** `xiaomi/mimo-v2-pro` is text-only (no vision). Use `xiaomi/mimo-v2-omni` for vision tasks. It scores highest on visual reasoning benchmarks but costs 4× more than the default.
 
 ---
 
